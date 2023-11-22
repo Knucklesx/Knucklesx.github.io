@@ -1,0 +1,17 @@
+name: restaurante
+services:
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: restaurante
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - "3307:3306"
+  adminer:
+      image: adminer
+      restart: always
+      ports:
+          - "8084:8080"
