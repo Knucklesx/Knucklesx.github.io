@@ -14,6 +14,7 @@
     "axios": "^1.6.2",
     "mysql2": "^3.6.3",
     "next": "14.0.2",
+    "node": "^21.1.0",
     "react": "^18",
     "react-dom": "^18",
     "serverless-mysql": "^1.5.5"
